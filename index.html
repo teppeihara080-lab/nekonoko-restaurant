@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- 1. 最優先の基本設定 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ねこのこレストラン - TOPページ</title>
+
+    <!-- 2. 外部接続の事前準備 ＆ JSの先行ダウンロード（defer） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+
+    <!-- 3. スタイルシート（外部フォント・ライブラリ → 自分のCSSの順） -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 4. ページ情報・ブラウザ制御 -->
+    <meta
+      name="description"
+      content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。"
+    />
+    <meta name="theme-color" content="#83c251" />
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- iOSなどで電話番号が勝手に青いリンクへ変換されるのを防ぐ -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- 5. ファビコン（課題制作のため未配置。必要に応じて追加） -->
+    <!--
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    -->
+
+    <!-- 6. OGP設定（課題制作のためコメントアウト。公開時にURLを確定させて有効化） -->
+    <!--
+    <meta property="og:title" content="ねこのこレストラン - TOPページ" />
+    <meta property="og:description" content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/images/main-visual.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    -->
+  </head>
+  <body>
+    <!-- ▼ ヘッダー（スマホでは縦並び、PCでは横並び） -->
+    <header class="site-header">
+      <div class="layout-container site-header-inner">
+        <div class="header-brand">
+          <img
+            src="images/logo.png"
+            alt="ねこのこレストラン ロゴ"
+            class="header-logo"
+          />
+          <div class="header-title-group">
+            <h1 class="site-title">ねこのこレストラン</h1>
+            <p class="site-lead">
+              自然豊かな土地の隠れ家的レストランで<br />
+              季節ごとの新鮮な地産食材を活かした料理を提供いたします
+            </p>
+          </div>
+        </div>
+
+        <!-- グローバルナビゲーション -->
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">ご予約</a></li>
+            <li><a href="#">09X-XXX-XXXX</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ▼ メインコンテンツ -->
+    <main class="site-main">
+      <div class="layout-container">
+        <!-- メインビジュアル（Swiperスライダー） -->
+        <!-- ※ Squoosh等で 1600×900 の WebP（hero-01.webp 等）を用意 -->
+        <section class="hero-section">
+          <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+              <!-- 1枚目はすぐ表示させるため loading="lazy" はつけない -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slider/sl-nature1.webp"
+                  alt="自然豊かな情景と小路"
+                  class="hero-image"
+                />
+              </div>
+              <!-- 2枚目以降は初期表示を軽くするため loading="lazy" をつける -->
+              <div class="swiper-slide">
+                <img
+                  src="images/slider/sl-nature2.webp"
+                  alt="自然の中にたたずむレストラン"
+                  class="hero-image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/slider/sl-room.webp"
+                  alt="落ち着いた雰囲気の店内"
+                  class="hero-image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/slider/sl-table2.webp"
+                  alt="食卓の風景"
+                  class="hero-image"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- スライド位置を示すページネーション（ドット） -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- スライダーの上に重ねるキャッチコピー（ヘッダーにh1があるためpタグを使用） -->
+          <div class="hero-overlay">
+            <p class="hero-title">ねこのこレストラン</p>
+            <p class="hero-subtitle">季節の恵みを、ゆとりある空間で</p>
+          </div>
+        </section>
+
+        <!-- セクション1：ディナーメニュー -->
+        <section class="feature-section">
+          <h2 class="section-heading">ディナーメニュー（要予約）</h2>
+          <div class="feature-grid">
+            <div class="feature-media">
+              <img
+                src="images/dinner.webp"
+                alt="ディナーコース料理"
+                class="feature-image"
+              />
+            </div>
+            <div class="feature-body">
+              <div class="feature-text">
+                <p>
+                  ディナーメニューのご案内<br />
+                  ご予約はお二人様以上から承ります。
+                </p>
+                <p>
+                  注文の多い子猫の気まぐれコース<br />
+                  5,000円～（税込）
+                </p>
+                <p>
+                  親猫子猫のスペシャルコース<br />
+                  8,000円～（税込）
+                </p>
+                <p>
+                  など、ご予算に応じて用意いたします。<br />
+                  <strong>ご予約の際にお問い合わせ</strong>ください。
+                </p>
+              </div>
+              <p class="feature-action">
+                <a href="#" class="btn-read-more">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- セクション2：こだわりの地産素材（PCでは画像と文章を左右反転） -->
+        <section class="feature-section">
+          <h2 class="section-heading">こだわりの地産素材</h2>
+          <div class="feature-grid is-reversed">
+            <div class="feature-media">
+              <img
+                src="images/vegetables.webp"
+                alt="地域でとれた旬の野菜"
+                class="feature-image"
+              />
+            </div>
+            <div class="feature-body">
+              <div class="feature-text">
+                <p>
+                  バジル、トマトをはじめとして地域でとれた旬の野菜や鮮魚を使った、季節を感じられる料理をご用意しております。
+                </p>
+                <p>
+                  主な季節の食材については<a href="#" class="text-link">こちら</a>
+                </p>
+              </div>
+              <p class="feature-action">
+                <a href="#" class="btn-read-more">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- セクション3：店舗の様子 -->
+        <section class="feature-section">
+          <h2 class="section-heading">店舗の様子</h2>
+          <div class="feature-grid">
+            <div class="feature-media">
+              <img
+                src="images/restaurant.webp"
+                alt="店内の様子"
+                class="feature-image"
+              />
+            </div>
+            <div class="feature-body">
+              <div class="feature-text">
+                <p>自然豊かな田舎の片隅にある小さなレストランです</p>
+                <p>
+                  大切な人とのお食事を、ゆっくり流れる時間、ゆとりと遊びのある空間で召し上がっていただけますよう、精一杯おもてなしいたします。
+                </p>
+                <p>店内の様子は<a href="#" class="text-link">こちら</a></p>
+              </div>
+              <p class="feature-action">
+                <a href="#" class="btn-read-more">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ▼ フッター（スマホは1列、PCは4列のGrid） -->
+    <footer class="site-footer">
+      <div class="layout-container">
+        <div class="footer-grid">
+          <img
+            src="images/logo-fotter.png"
+            alt="ねこのこレストラン ロゴ"
+            class="footer-logo"
+          />
+
+          <!-- 店舗情報（dtとddを2列のGridで整列） -->
+          <dl class="footer-info">
+            <dt>所在地</dt>
+            <dd>猫野遠賀江市子猫北区今須町２丁目２ー２</dd>
+            <dt>TEL.</dt>
+            <dd>090-XXX-XXXX</dd>
+            <dt>ランチ</dt>
+            <dd>11:30～14:00</dd>
+            <dt>ディナー</dt>
+            <dd>17:30～22:00（要事前予約、L.O.21:30）</dd>
+          </dl>
+
+          <!-- フッターナビゲーション -->
+          <ul class="footer-nav-list">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">メニュー</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li><a href="#">ご予約</a></li>
+            <li><a href="#">アクセス</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+
+        <p class="footer-copyright">
+          <small>Copyright &copy; NekonokoRestaurant All Rights Reserved.</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
