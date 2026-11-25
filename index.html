@@ -32,7 +32,7 @@
       name="description"
       content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。"
    >
-    <meta name="theme-color" content="#83c251">
+    <meta name="theme-color" content="#2f5d34">
     <meta name="robots" content="noindex,nofollow">
     <!-- iOSなどで電話番号が勝手に青いリンクへ変換されるのを防ぐ -->
     <meta name="format-detection" content="telephone=no">
@@ -85,57 +85,59 @@
 
     <!-- ▼ メインコンテンツ -->
     <main class="site-main">
-      <div class="layout-container">
-        <!-- メインビジュアル（Swiperスライダー） -->
-        <!-- 1600×900 の WebPを用意 -->
-        <div class="hero-area">
-          <div class="swiper hero-swiper">
-            <div class="swiper-wrapper">
-              <!-- 1枚目はすぐ表示させるため loading="lazy" はつけない -->
-              <div class="swiper-slide">
-                <img
-                  src="images/slider/sl-nature1.webp"
-                  alt="自然豊かな情景と小路"
-                  class="hero-image"
-                >
-              </div>
-              <!-- 2枚目以降は初期表示を軽くするため loading="lazy" をつける -->
-              <div class="swiper-slide">
-                <img
-                  src="images/slider/sl-nature2.webp"
-                  alt="自然の中にたたずむレストラン"
-                  class="hero-image"
-                  loading="lazy"
-                >
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/slider/sl-room.webp"
-                  alt="落ち着いた雰囲気の店内"
-                  class="hero-image"
-                  loading="lazy"
-               >
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/slider/sl-table2.webp"
-                  alt="食卓の風景"
-                  class="hero-image"
-                  loading="lazy"
-               >
-              </div>
+      <!-- メインビジュアル（フルワイドのSwiperスライダー） -->
+      <!-- 1600×900 の WebPを用意 -->
+      <div class="hero-area">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <!-- 1枚目はすぐ表示させるため loading="lazy" はつけない -->
+            <div class="swiper-slide">
+              <img
+                src="images/slider/sl-nature1.webp"
+                alt="自然豊かな情景と小路"
+                class="hero-image"
+              >
             </div>
-
-            <!-- スライド位置を示すページネーション（ドット） -->
-            <div class="swiper-pagination"></div>
+            <!-- 2枚目以降は初期表示を軽くするため loading="lazy" をつける -->
+            <div class="swiper-slide">
+              <img
+                src="images/slider/sl-nature2.webp"
+                alt="自然の中にたたずむレストラン"
+                class="hero-image"
+                loading="lazy"
+              >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slider/sl-room.webp"
+                alt="落ち着いた雰囲気の店内"
+                class="hero-image"
+                loading="lazy"
+             >
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slider/sl-table2.webp"
+                alt="食卓の風景"
+                class="hero-image"
+                loading="lazy"
+             >
+            </div>
           </div>
 
-          <!-- スライダーの上に重ねるキャッチコピー -->
-          <div class="hero-overlay">
-            <p class="hero-title">ねこのこレストラン</p>
-            <p class="hero-subtitle">季節の恵みを、ゆとりある空間で</p>
-          </div>
+          <!-- スライド位置を示すページネーション（ドット） -->
+          <div class="swiper-pagination"></div>
         </div>
+
+        <!-- スライダーの上に重ねるキャッチコピー -->
+        <div class="hero-overlay">
+          <p class="hero-title">ねこのこレストラン</p>
+          <p class="hero-subtitle">季節の恵みを、ゆとりある空間で</p>
+        </div>
+      </div>
+
+      <!-- 各紹介セクション（ここからは最大幅1140pxのコンテナ内に収める） -->
+      <div class="layout-container">
 
         <!-- セクション1：ディナーメニュー -->
         <section class="feature-section">
@@ -251,18 +253,17 @@
             <dd>17:30～22:00（要事前予約、L.O.21:30）</dd>
           </dl>
 
-          <!-- フッターナビゲーション -->
-          <ul class="footer-nav-list">
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">メニュー</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-
-          <ul class="footer-nav-list">
-            <li><a href="#">ご予約</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
-          </ul>
+          <!-- フッターナビゲーション（6項目を1つのリストにまとめ、CSS Gridで2列に並べる） -->
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="#">ホーム</a></li>
+              <li><a href="#">メニュー</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">ご予約</a></li>
+              <li><a href="#">アクセス</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+          </nav>
         </div>
 
         <p class="footer-copyright">
