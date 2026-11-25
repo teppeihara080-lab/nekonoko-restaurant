@@ -2,14 +2,14 @@
 <html lang="ja">
   <head>
     <!-- 1. 最優先の基本設定 -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ねこのこレストラン - TOPページ</title>
 
     <!-- 2. 外部接続の事前準備 ＆ JSの先行ダウンロード（defer） -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
@@ -20,37 +20,35 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
       rel="stylesheet"
-    />
+   >
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+   >
+    <link rel="stylesheet" href="style.css">
 
     <!-- 4. ページ情報・ブラウザ制御 -->
     <meta
       name="description"
       content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。"
-    />
-    <meta name="theme-color" content="#83c251" />
-    <meta name="robots" content="noindex,nofollow" />
+   >
+    <meta name="theme-color" content="#83c251">
+    <meta name="robots" content="noindex,nofollow">
     <!-- iOSなどで電話番号が勝手に青いリンクへ変換されるのを防ぐ -->
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no">
 
-    <!-- 5. ファビコン（課題制作のため未配置。必要に応じて追加） -->
-    <!--
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-    -->
+    <!-- 5. ファビコン -->
+    <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 
     <!-- 6. OGP設定（課題制作のためコメントアウト。公開時にURLを確定させて有効化） -->
     <!--
-    <meta property="og:title" content="ねこのこレストラン - TOPページ" />
-    <meta property="og:description" content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com/" />
-    <meta property="og:image" content="https://example.com/images/main-visual.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="ねこのこレストラン - TOPページ">
+    <meta property="og:description" content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/images/main-visual.png">
+    <meta name="twitter:card" content="summary_large_image">
     -->
   </head>
   <body>
@@ -62,11 +60,11 @@
             src="images/logo.png"
             alt="ねこのこレストラン ロゴ"
             class="header-logo"
-          />
+         >
           <div class="header-title-group">
             <h1 class="site-title">ねこのこレストラン</h1>
             <p class="site-lead">
-              自然豊かな土地の隠れ家的レストランで<br />
+              自然豊かな土地の隠れ家的レストランで<br>
               季節ごとの新鮮な地産食材を活かした料理を提供いたします
             </p>
           </div>
@@ -89,8 +87,8 @@
     <main class="site-main">
       <div class="layout-container">
         <!-- メインビジュアル（Swiperスライダー） -->
-        <!-- ※ Squoosh等で 1600×900 の WebP（hero-01.webp 等）を用意 -->
-        <section class="hero-section">
+        <!-- 1600×900 の WebPを用意 -->
+        <div class="hero-area">
           <div class="swiper hero-swiper">
             <div class="swiper-wrapper">
               <!-- 1枚目はすぐ表示させるため loading="lazy" はつけない -->
@@ -99,7 +97,7 @@
                   src="images/slider/sl-nature1.webp"
                   alt="自然豊かな情景と小路"
                   class="hero-image"
-                />
+                >
               </div>
               <!-- 2枚目以降は初期表示を軽くするため loading="lazy" をつける -->
               <div class="swiper-slide">
@@ -108,7 +106,7 @@
                   alt="自然の中にたたずむレストラン"
                   class="hero-image"
                   loading="lazy"
-                />
+                >
               </div>
               <div class="swiper-slide">
                 <img
@@ -116,7 +114,7 @@
                   alt="落ち着いた雰囲気の店内"
                   class="hero-image"
                   loading="lazy"
-                />
+               >
               </div>
               <div class="swiper-slide">
                 <img
@@ -124,7 +122,7 @@
                   alt="食卓の風景"
                   class="hero-image"
                   loading="lazy"
-                />
+               >
               </div>
             </div>
 
@@ -132,12 +130,12 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <!-- スライダーの上に重ねるキャッチコピー（ヘッダーにh1があるためpタグを使用） -->
+          <!-- スライダーの上に重ねるキャッチコピー -->
           <div class="hero-overlay">
             <p class="hero-title">ねこのこレストラン</p>
             <p class="hero-subtitle">季節の恵みを、ゆとりある空間で</p>
           </div>
-        </section>
+        </div>
 
         <!-- セクション1：ディナーメニュー -->
         <section class="feature-section">
@@ -148,24 +146,24 @@
                 src="images/dinner.webp"
                 alt="ディナーコース料理"
                 class="feature-image"
-              />
+             >
             </div>
             <div class="feature-body">
               <div class="feature-text">
                 <p>
-                  ディナーメニューのご案内<br />
+                  ディナーメニューのご案内<br>
                   ご予約はお二人様以上から承ります。
                 </p>
                 <p>
-                  注文の多い子猫の気まぐれコース<br />
+                  注文の多い子猫の気まぐれコース<br>
                   5,000円～（税込）
                 </p>
                 <p>
-                  親猫子猫のスペシャルコース<br />
+                  親猫子猫のスペシャルコース<br>
                   8,000円～（税込）
                 </p>
                 <p>
-                  など、ご予算に応じて用意いたします。<br />
+                  など、ご予算に応じて用意いたします。<br>
                   <strong>ご予約の際にお問い合わせ</strong>ください。
                 </p>
               </div>
@@ -185,7 +183,7 @@
                 src="images/vegetables.webp"
                 alt="地域でとれた旬の野菜"
                 class="feature-image"
-              />
+             >
             </div>
             <div class="feature-body">
               <div class="feature-text">
@@ -212,7 +210,7 @@
                 src="images/restaurant.webp"
                 alt="店内の様子"
                 class="feature-image"
-              />
+             >
             </div>
             <div class="feature-body">
               <div class="feature-text">
@@ -239,7 +237,7 @@
             src="images/logo-fotter.png"
             alt="ねこのこレストラン ロゴ"
             class="footer-logo"
-          />
+         >
 
           <!-- 店舗情報（dtとddを2列のGridで整列） -->
           <dl class="footer-info">

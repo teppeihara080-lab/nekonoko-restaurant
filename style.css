@@ -129,7 +129,7 @@ img {
    ========================================================================== */
 
 /* --- メインビジュアル（スライダー） --- */
-.hero-section {
+.hero-area {
 	position: relative;
 	width: 100%;
 	/* 16:9の比率を保ちつつ、スマホでも小さくなりすぎないよう最小高さを確保 */
@@ -157,13 +157,14 @@ img {
 	position: absolute;
 	inset: 0;
 	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.35);
+	background-color: rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	color: var(--text-inverse);
+	/*スマホでの画面端への密着防止*/
 	padding: 16px;
 	/* スライダーのドラッグ・スワイプ操作を邪魔しないようにする */
 	pointer-events: none;
@@ -334,7 +335,7 @@ img {
 	}
 
 	/* --- メインコンテンツ --- */
-	.hero-section {
+	.hero-area {
 		max-height: 540px;
 		margin-bottom: 100px;
 	}
