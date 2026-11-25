@@ -265,19 +265,33 @@ img {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 180px;
-	min-height: 56px;
+	gap: 8px;
+	min-width: 196px;
+	min-height: 54px;
 	padding: 12px 24px;
 	border: 2px solid var(--accent);
+	border-radius: 8px;
 	color: var(--accent);
 	text-decoration: none;
 	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.06em;
 	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-read-more:hover {
 	background-color: var(--accent);
 	color: var(--text-inverse);
+}
+
+.btn-icon {
+	flex-shrink: 0;
+	transition: transform 0.2s ease;
+}
+
+/* ホバー時に肉球アイコンが少し傾くさりげない遊び心 */
+.btn-read-more:hover .btn-icon {
+	transform: rotate(-12deg) scale(1.08);
 }
 
 /* ==========================================================================
