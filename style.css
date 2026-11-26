@@ -4,17 +4,17 @@
    1. カラーテーマ変数
    ========================================================================== */
 :root {
-	/* 真っ白ではなく、温かみのある生成り系オフホワイトで目への負担を軽減 */
-	--bg-body: #faf8f4;
-	/* 白文字とのコントラスト比（WCAG AA以上）を満たす落ち着いた深緑に変更 */
-	--bg-footer: #2f5d34;
-	--bg-hover: #efeae0;
-	--text-main: #2e2b27;
-	--text-muted: #5c564e;
-	--text-inverse: #ffffff;
-	--accent: #c30d23;
-	--border-main: #2e2b27;
-	--border-subtle: #dcd5c9;
+  /* 真っ白ではなく、温かみのある生成り系オフホワイトで目への負担を軽減 */
+  --bg-body: #faf8f4;
+  /* 白文字とのコントラスト比（WCAG AA以上）を満たす落ち着いた深緑に変更 */
+  --bg-footer: #2f5d34;
+  --bg-hover: #efeae0;
+  --text-main: #2e2b27;
+  --text-muted: #5c564e;
+  --text-inverse: #ffffff;
+  --accent: #c30d23;
+  --border-main: #2e2b27;
+  --border-subtle: #dcd5c9;
 }
 
 /* ==========================================================================
@@ -24,20 +24,21 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-color: var(--bg-body);
-	color: var(--text-main);
-	font-family: "YuGothic", "Yu Gothic", "游ゴシック", "Hiragino Sans", "Meiryo", sans-serif;
-	/* Windowsの游ゴシックが細くかすれるのを防ぐため500を指定 */
-	font-weight: 500;
-	font-size: 1rem;
-	/* 日本語の漢字密度を考慮し、読みやすい行間とわずかな文字間を設定 */
-	line-height: 1.8;
-	letter-spacing: 0.04em;
+  margin: 0;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family:
+    "YuGothic", "Yu Gothic", "游ゴシック", "Hiragino Sans", "Meiryo", sans-serif;
+  /* Windowsの游ゴシックが細くかすれるのを防ぐため500を指定 */
+  font-weight: 500;
+  font-size: 1rem;
+  /* 日本語の漢字密度を考慮し、読みやすい行間とわずかな文字間を設定 */
+  line-height: 1.8;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -46,48 +47,48 @@ p,
 ul,
 dl,
 dd {
-	margin: 0;
+  margin: 0;
 }
 
 ul {
-	padding: 0;
-	list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ==========================================================================
    3. 大枠レイアウト
    ========================================================================== */
 .layout-container {
-	max-width: 1140px;
-	margin: 0 auto;
-	/* スマホ画面でも端にくっつかないよう左右に余白を確保 */
-	padding: 0 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  /* スマホ画面でも端にくっつかないよう左右に余白を確保 */
+  padding: 0 20px;
 }
 
 /* ==========================================================================
    4. ヘッダー & ナビゲーション（スマホ基準）
    ========================================================================== */
 .site-header {
-	padding-top: 16px;
-	margin-bottom: 32px;
+  padding-top: 16px;
+  margin-bottom: 32px;
 }
 
 .site-header-inner {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .header-brand {
-	display: flex;
-	align-items: center;
-	gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .header-logo-link {
@@ -103,40 +104,40 @@ img {
 }
 
 .site-title {
-	font-family: "Yuji Syuku", serif;
-	font-size: 1.5rem;
-	line-height: 1.3;
-	margin-bottom: 8px;
+  font-family: "Yuji Syuku", serif;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
 .site-lead {
-	font-size: 0.875rem;
-	line-height: 1.7;
-	color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--text-muted);
 }
 
 .site-nav-list {
-	display: flex;
-	/* スマホ幅で収まりきらない場合に自動で折り返す */
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 4px;
-	border-bottom: 3px solid var(--border-main);
+  display: flex;
+  /* スマホ幅で収まりきらない場合に自動で折り返す */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  border-bottom: 3px solid var(--border-main);
 }
 
 .site-nav-list a {
-	display: block;
-	padding: 8px 12px;
-	color: var(--border-main);
-	text-decoration: none;
-	font-size: 0.9375rem;
-	/* 「ご予約」や電話番号が途中で2行に折り返されるのを防ぐ */
-	white-space: nowrap;
-	transition: background-color 0.2s ease;
+  display: block;
+  padding: 8px 12px;
+  color: var(--border-main);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  /* 「ご予約」や電話番号が途中で2行に折り返されるのを防ぐ */
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
 }
 
 .site-nav-list a:hover {
-	background-color: var(--bg-hover);
+  background-color: var(--bg-hover);
 }
 
 /* ==========================================================================
@@ -145,288 +146,290 @@ img {
 
 /* --- メインビジュアル（スライダー） --- */
 .hero-area {
-	position: relative;
-	width: 100%;
-	/* 最小360px・基本は画面高さの70%・最大760pxの範囲で可変（svhでスマホのアドレスバー伸縮によるガタつきを防止） */
-	height: clamp(360px, 70svh, 760px);
-	margin-bottom: 64px;
-	overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* 最小360px・基本は画面高さの70%・最大760pxの範囲で可変（svhでスマホのアドレスバー伸縮によるガタつきを防止） */
+  height: clamp(360px, 70svh, 760px);
+  margin-bottom: 64px;
+  overflow: hidden;
 }
 
 .hero-swiper {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-image {
-	width: 100%;
-	height: 100%;
-	/* 画像の縦横比を崩さずに枠いっぱいにトリミング表示する */
-	object-fit: cover;
-	object-position: center;
+  width: 100%;
+  height: 100%;
+  /* 画像の縦横比を崩さずに枠いっぱいにトリミング表示する */
+  object-fit: cover;
+  object-position: center;
 }
 
 /* スライダーの上に重ねる暗い幕とキャッチコピー */
 .hero-overlay {
-	position: absolute;
-	inset: 0;
-	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.25);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: var(--text-inverse);
-	/*スマホでの画面端への密着防止*/
-	padding: 16px;
-	/* スライダーのドラッグ・スワイプ操作を邪魔しないようにする */
-	pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-inverse);
+  /*スマホでの画面端への密着防止*/
+  padding: 16px;
+  /* スライダーのドラッグ・スワイプ操作を邪魔しないようにする */
+  pointer-events: none;
 }
 
 .hero-title {
-	font-family: "Yuji Syuku", serif;
-	font-size: clamp(1.5rem, 4vw, 2.75rem);
-	line-height: 1.3;
-	margin-bottom: 8px;
-	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  font-family: "Yuji Syuku", serif;
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  line-height: 1.3;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
 .hero-subtitle {
-	font-size: clamp(0.875rem, 1.8vw, 1.125rem);
-	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+  font-size: clamp(0.875rem, 1.8vw, 1.125rem);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
 }
 
 /* ページネーションがオーバーレイより手前に来てクリックできるよう z-index を調整 */
 .hero-swiper .swiper-pagination {
-	z-index: 3;
+  z-index: 3;
 }
 
 .hero-swiper .swiper-pagination-bullet {
-	background-color: var(--text-inverse);
-	opacity: 0.6;
+  background-color: var(--text-inverse);
+  opacity: 0.6;
 }
 
 .hero-swiper .swiper-pagination-bullet-active {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* --- 各紹介セクション --- */
 .feature-section {
-	margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .section-heading {
-	font-family: "Yuji Syuku", serif;
-	font-size: clamp(1.375rem, 2.5vw, 1.75rem);
-	line-height: 1.4;
-	letter-spacing: 0.06em;
-	padding: 2px 0 10px 14px;
-	margin-bottom: 24px;
-	border-left: 4px solid var(--accent);
-	border-bottom: 1px solid var(--border-subtle);
+  font-family: "Yuji Syuku", serif;
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  padding: 2px 0 10px 14px;
+  margin-bottom: 24px;
+  border-left: 4px solid var(--accent);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 /* モバイルでは1列の縦並び（画像 → 文章）にする */
 .feature-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 .feature-image {
-	width: 100%;
-	border-radius: 15px 0 15px 0;
-	/* 明るい写真が背景から浮かないよう、わずかに輝度を抑えて柔らかな影を落とす */
-	filter: brightness(0.94) contrast(1.03);
-	box-shadow: 0 8px 24px rgba(46, 43, 39, 0.12);
+  width: 100%;
+  border-radius: 15px 0 15px 0;
+  /* 明るい写真が背景から浮かないよう、わずかに輝度を抑えて柔らかな影を落とす */
+  filter: brightness(0.94) contrast(1.03);
+  box-shadow: 0 8px 24px rgba(46, 43, 39, 0.12);
 }
 
 /* 文章量に関わらずREAD MOREボタンを常に最下部に揃えるためにFlexを使用 */
 .feature-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .feature-text {
-	/* 日本語本文が1行あたり長くなりすぎないよう最大文字幅を抑える */
-	max-width: 38em;
+  /* 日本語本文が1行あたり長くなりすぎないよう最大文字幅を抑える */
+  max-width: 38em;
 }
 
 .feature-text p + p {
-	margin-top: 1.1em;
+  margin-top: 1.1em;
 }
 
 .text-link {
-	color: var(--accent);
+  color: var(--accent);
 }
 
 .feature-action {
-	text-align: right;
+  text-align: right;
 }
 
 /* --- READ MOREボタン --- */
 .btn-read-more {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	min-width: 196px;
-	min-height: 54px;
-	padding: 12px 24px;
-	border: 2px solid var(--accent);
-	border-radius: 8px;
-	color: var(--accent);
-	text-decoration: none;
-	font-weight: 700;
-	line-height: 1;
-	letter-spacing: 0.06em;
-	transition: background-color 0.2s ease, color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 196px;
+  min-height: 54px;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .btn-read-more:hover {
-	background-color: var(--accent);
-	color: var(--text-inverse);
+  background-color: var(--accent);
+  color: var(--text-inverse);
 }
 
 .btn-icon {
-	flex-shrink: 0;
-	transition: transform 0.2s ease;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
 
 /* ホバー時に肉球アイコンが少し傾くさりげない遊び心 */
 .btn-read-more:hover .btn-icon {
-	transform: rotate(-12deg) scale(1.08);
+  transform: rotate(-12deg) scale(1.08);
 }
 
 /* ==========================================================================
    6. フッター
    ========================================================================== */
 .site-footer {
-	background-color: var(--bg-footer);
-	color: var(--text-inverse);
-	padding: 32px 0 20px;
+  background-color: var(--bg-footer);
+  color: var(--text-inverse);
+  padding: 32px 0 20px;
 }
 
 /* スマホでは縦並びの1列レイアウトにする */
 .footer-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
 }
 
 /* 元画像（90×94px）を引き伸ばして滲ませないよう、ヘッダーロゴと同じ72pxに統一 */
 .footer-logo {
-	width: 72px;
+  width: 72px;
 }
 
 /* 項目名（dt）と内容（dd）を2列のGridで綺麗に揃える */
 .footer-info {
-	display: grid;
-	grid-template-columns: 5.5em 1fr;
-	gap: 8px 16px;
-	font-size: 0.9375rem;
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  gap: 8px 16px;
+  font-size: 0.9375rem;
 }
 
 .footer-info dt {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /* 6項目をスマホでもPCでも綺麗に2列で並べる */
 .footer-nav-list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 10px 24px;
-	font-size: 0.9375rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
+  font-size: 0.9375rem;
 }
 
 .footer-nav-list a {
-	color: var(--text-inverse);
-	text-decoration: none;
-	transition: opacity 0.2s ease;
+  color: var(--text-inverse);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .footer-nav-list a:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .footer-copyright {
-	margin-top: 32px;
-	text-align: center;
+  margin-top: 32px;
+  text-align: center;
 }
 
 /* ==========================================================================
    7. デスクトップ表示（768px以上）
    ========================================================================== */
 @media (min-width: 768px) {
-	/* --- ヘッダー（タブレット幅ではまだ縦並びを維持し、余白だけ広げる） --- */
-	.site-header {
-		margin-bottom: 40px;
-	}
+  /* --- ヘッダー（タブレット幅ではまだ縦並びを維持し、余白だけ広げる） --- */
+  .site-header {
+    margin-bottom: 40px;
+  }
 
-	.header-brand {
-		gap: 28px;
-	}
+  .header-brand {
+    gap: 28px;
+  }
 
-	.header-logo-link {
-		width: auto;
-	}
+  .header-logo-link {
+    width: auto;
+  }
 
-	.site-title {
-		font-size: 1.625rem;
-		margin-bottom: 14px;
-	}
+  .site-title {
+    font-size: 1.625rem;
+    margin-bottom: 14px;
+  }
 
-	/* --- メインコンテンツ --- */
-	.hero-area {
-		margin-bottom: 100px;
-	}
+  /* --- メインコンテンツ --- */
+  .hero-area {
+    margin-bottom: 100px;
+  }
 
-	.feature-section {
-		margin-bottom: 100px;
-	}
+  .feature-section {
+    margin-bottom: 100px;
+  }
 
-	/* PCでは画像と文章を横並び（約55% : 45%）にする */
-	.feature-grid {
-		grid-template-columns: 1.2fr 1fr;
-		gap: 48px;
-	}
+  /* PCでは画像と文章を横並び（約55% : 45%）にする */
+  .feature-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+  }
 
-	/* 左右反転セクション：HTMLの順番は変えず、表示順だけ入れ替える */
-	.feature-grid.is-reversed {
-		grid-template-columns: 1fr 1.2fr;
-	}
+  /* 左右反転セクション：HTMLの順番は変えず、表示順だけ入れ替える */
+  .feature-grid.is-reversed {
+    grid-template-columns: 1fr 1.2fr;
+  }
 
-	.feature-grid.is-reversed .feature-media {
-		order: 2;
-	}
+  .feature-grid.is-reversed .feature-media {
+    order: 2;
+  }
 
-	.feature-grid.is-reversed .feature-body {
-		order: 1;
-	}
+  .feature-grid.is-reversed .feature-body {
+    order: 1;
+  }
 
-	/* --- フッター --- */
-	.site-footer {
-		padding: 36px 0 20px;
-	}
+  /* --- フッター --- */
+  .site-footer {
+    padding: 36px 0 20px;
+  }
 
-	/* PCでは「ロゴ | 店舗情報 | ナビ」の3列に並べる */
-	.footer-grid {
-		grid-template-columns: auto 1fr auto;
-		gap: 40px;
-		align-items: start;
-	}
+  /* PCでは「ロゴ | 店舗情報 | ナビ」の3列に並べる */
+  .footer-grid {
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
+    align-items: start;
+  }
 
-	.footer-nav-list {
-		grid-template-columns: repeat(2, auto);
-		gap: 10px 32px;
-	}
+  .footer-nav-list {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 32px;
+  }
 
-	.footer-logo {
-		width: auto;
-	}
+  .footer-logo {
+    width: auto;
+  }
 }
 
 /* ==========================================================================
@@ -434,18 +437,18 @@ img {
    ========================================================================== */
 /* ロゴ＋リード文とナビを1行に並べても窮屈にならない幅で横並びに切り替える */
 @media (min-width: 1024px) {
-	.site-header-inner {
-		flex-direction: row;
-		align-items: flex-end;
-		justify-content: space-between;
-	}
+  .site-header-inner {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 
-	.site-nav {
-		/* 左側のテキストに押されてナビが潰れないようにする */
-		flex-shrink: 0;
-	}
+  .site-nav {
+    /* 左側のテキストに押されてナビが潰れないようにする */
+    flex-shrink: 0;
+  }
 
-	.site-nav-list {
-		flex-wrap: nowrap;
-	}
+  .site-nav-list {
+    flex-wrap: nowrap;
+  }
 }
