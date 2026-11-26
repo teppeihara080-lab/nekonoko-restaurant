@@ -90,9 +90,16 @@ img {
 	gap: 16px;
 }
 
+.header-logo-link {
+  display: block;
+  width: 72px;
+  flex-shrink: 0;
+}
+
 .header-logo {
-	width: 72px;
-	flex-shrink: 0;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .site-title {
@@ -363,7 +370,7 @@ img {
 		gap: 28px;
 	}
 
-	.header-logo {
+	.header-logo-link {
 		width: auto;
 	}
 

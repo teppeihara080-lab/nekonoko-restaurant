@@ -38,19 +38,12 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- 5. ファビコン -->
-    <link rel="icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-
-    <!-- 6. OGP設定（課題制作のためコメントアウト。公開時にURLを確定させて有効化） -->
-    <!--
-    <meta property="og:title" content="ねこのこレストラン - TOPページ">
-    <meta property="og:description" content="自然豊かな土地の隠れ家的レストラン「ねこのこレストラン」。季節ごとの新鮮な地産食材を活かした料理を提供いたします。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/">
-    <meta property="og:image" content="https://example.com/images/main-visual.png">
-    <meta name="twitter:card" content="summary_large_image">
-    -->
+    <!-- PCブラウザ・検索結果用（32x32 の PNG を .ico に変換したもの） -->
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <!-- iPhone / iPad のホーム画面追加用（180x180 の PNG） -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
   </head>
+
   <body>
     <!-- ▼ SVG共通部品の定義（画面には直接表示されない） -->
     <svg style="display: none">
@@ -68,11 +61,9 @@
     <header class="site-header">
       <div class="layout-container site-header-inner">
         <div class="header-brand">
-          <img
-            src="images/logo.png"
-            alt="ねこのこレストラン ロゴ"
-            class="header-logo"
-         >
+          <a href="#" class="header-logo-link">
+            <img src="images/logo.png" alt="ねこのこレストラン ロゴ" class="header-logo">
+          </a>
           <div class="header-title-group">
             <h1 class="site-title">ねこのこレストラン</h1>
             <p class="site-lead">
@@ -104,36 +95,17 @@
           <div class="swiper-wrapper">
             <!-- 1枚目はすぐ表示させるため loading="lazy" はつけない -->
             <div class="swiper-slide">
-              <img
-                src="images/slider/sl-nature1.webp"
-                alt="自然豊かな情景と小路"
-                class="hero-image"
-              >
+              <img src="images/slider/sl-nature1.webp" alt="自然豊かな情景と小路" class="hero-image">
             </div>
             <!-- 2枚目以降は初期表示を軽くするため loading="lazy" をつける -->
             <div class="swiper-slide">
-              <img
-                src="images/slider/sl-nature2.webp"
-                alt="自然の中にたたずむレストラン"
-                class="hero-image"
-                loading="lazy"
-              >
+              <img src="images/slider/sl-nature2.webp" alt="自然の中にたたずむレストラン" class="hero-image" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img
-                src="images/slider/sl-room.webp"
-                alt="落ち着いた雰囲気の店内"
-                class="hero-image"
-                loading="lazy"
-             >
+              <img src="images/slider/sl-room.webp" alt="落ち着いた雰囲気の店内" class="hero-image" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img
-                src="images/slider/sl-table2.webp"
-                alt="食卓の風景"
-                class="hero-image"
-                loading="lazy"
-             >
+              <img src="images/slider/sl-table2.webp" alt="食卓の風景" class="hero-image" loading="lazy">
             </div>
           </div>
 
@@ -156,29 +128,21 @@
           <h2 class="section-heading">ディナーメニュー（要予約）</h2>
           <div class="feature-grid">
             <div class="feature-media">
-              <img
-                src="images/dinner.webp"
-                alt="ディナーコース料理"
-                class="feature-image"
-             >
+              <img src="images/dinner.webp" alt="ディナーコース料理" class="feature-image">
             </div>
             <div class="feature-body">
               <div class="feature-text">
                 <p>
-                  ディナーメニューのご案内<br>
-                  ご予約はお二人様以上から承ります。
+                  ディナーメニューのご案内<br>ご予約はお二人様以上から承ります。
                 </p>
                 <p>
-                  注文の多い子猫の気まぐれコース<br>
-                  5,000円～（税込）
+                  注文の多い子猫の気まぐれコース<br> 5,000円～（税込）
                 </p>
                 <p>
-                  親猫子猫のスペシャルコース<br>
-                  8,000円～（税込）
+                  親猫子猫のスペシャルコース<br>8,000円～（税込）
                 </p>
                 <p>
-                  など、ご予算に応じて用意いたします。<br>
-                  <strong>ご予約の際にお問い合わせ</strong>ください。
+                  など、ご予算に応じて用意いたします。<br><strong>ご予約の際にお問い合わせ</strong>ください。
                 </p>
               </div>
               <p class="feature-action">
@@ -198,11 +162,7 @@
           <h2 class="section-heading">こだわりの地産素材</h2>
           <div class="feature-grid is-reversed">
             <div class="feature-media">
-              <img
-                src="images/vegetables.webp"
-                alt="地域でとれた旬の野菜"
-                class="feature-image"
-             >
+              <img src="images/vegetables.webp" alt="地域でとれた旬の野菜" class="feature-image">
             </div>
             <div class="feature-body">
               <div class="feature-text">
@@ -230,11 +190,7 @@
           <h2 class="section-heading">店舗の様子</h2>
           <div class="feature-grid">
             <div class="feature-media">
-              <img
-                src="images/restaurant.webp"
-                alt="店内の様子"
-                class="feature-image"
-             >
+              <img src="images/restaurant.webp" alt="店内の様子" class="feature-image">
             </div>
             <div class="feature-body">
               <div class="feature-text">
@@ -262,12 +218,7 @@
     <footer class="site-footer">
       <div class="layout-container">
         <div class="footer-grid">
-          <img
-            src="images/logo-fotter.png"
-            alt="ねこのこレストラン ロゴ"
-            class="footer-logo"
-         >
-
+          <img src="images/logo-fotter.png" alt="ねこのこレストラン ロゴ" class="footer-logo">
           <!-- 店舗情報（dtとddを2列のGridで整列） -->
           <dl class="footer-info">
             <dt>所在地</dt>
